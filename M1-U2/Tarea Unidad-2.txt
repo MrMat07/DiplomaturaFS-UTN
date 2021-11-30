@@ -1,0 +1,5 @@
+1. Crear una cuenta en GitHub.
+2. Crear un repositorio público.
+3. Subir el archivo .txt.
+4. Subir algunas de las imágenes que se encuentran dentro de la carpeta materiales.
+5. Compartir la URL.
