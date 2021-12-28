@@ -1,0 +1,36 @@
+.contenedor{
+    border:1px solid black;
+    display: flex;
+    background-color: whitesmoke;
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /* align-content: flex-end;  */
+    align-items: flex-end;
+}
+
+.item{
+    border:1px solid black;
+    color: white;
+    width: 165px;
+	height: 167px;
+	font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rojo{
+    background-color: red;
+}
+
+#azul{
+    background-color: blue;
+}
+
+#verde{
+    background-color: green;
+}
