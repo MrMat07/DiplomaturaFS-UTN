@@ -2,7 +2,7 @@ const array = new Array(5); //[100 , 6, 2, 56, 32, 5, 99, 32];
 var mayor = 0;
 
 for(x=0;x < array.length; x++){
-    array[x]=prompt('Ingrese un número:','');
+    array[x]=parseInt(prompt('Ingrese un número:',''));
 }
 
 
