@@ -1,0 +1,45 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contenedor{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0.6em;
+}
+.contenedor input, .contenedor textarea {
+    border: 1px solid black;
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;
+    width: 70%;
+    background-color:  #84dddd;
+    padding-bottom: 1em;
+    border-radius: 1em;
+}
+
+#enviar{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    color: white;
+    background-color: #168c8c ;
+    border: 1px solid  #e3f7f7;
+    width: auto;
+    cursor: pointer;
+  }
+
+  #enviar:hover{
+    background-color:  #e3f7f7;
+    border: 1px solid  #84dddd;
+    color: black;
+  }
+
+  .contenedor textarea{
+      height: 10em;
+      resize: none;
+  }
+
+  .contenedor.acciones{
+    text-align: center;
+  }
