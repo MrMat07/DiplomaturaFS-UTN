@@ -6,22 +6,22 @@ const Nav = (props) => {
       <div class="holder">
         <ul>
           <li>
-            <Link href="/">Home</Link>
+            <Link Link to="/">Home</Link>
           </li>
           <li>
-            <Link href="/nosotros">Nosotros</Link>
+            <Link Link to="/nosotros">Nosotros</Link>
           </li>
           <li>
-            <Link href="/servicios">Servicios</Link>
+            <Link Link to="/servicios">Servicios</Link>
           </li>
           <li>
-            <Link href="/galeria">Galeria</Link>
+            <Link Link to="/galeria">Galeria</Link>
           </li>
           <li>
-            <Link href="/novedades">Novedades</Link>
+            <Link Link to="/novedades">Novedades</Link>
           </li>
           <li>
-            <Link href="/contactos">Contactos</Link>
+            <Link Link to="/contactos">Contactos</Link>
           </li>
         </ul>
       </div>

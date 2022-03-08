@@ -1,6 +1,6 @@
 const Header = (props) => {
   return (
-    <Header>
+    <header>
       <div className="holder">
         <div className="Logo">
         <img
@@ -10,7 +10,7 @@ const Header = (props) => {
           <h1>Intech 2.0 Systems</h1>
         </div>
       </div>
-    </Header>
+    </header>
   );
 };
 
