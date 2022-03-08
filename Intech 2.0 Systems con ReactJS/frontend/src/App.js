@@ -13,6 +13,9 @@ import GaleriaPage from "./pages/GaleriaPage";
 import NovedadesPage from "./pages/NovedadesPage";
 import ContactosPage from "./pages/ContactoPage";
 
+// Iporto los estilos
+import './App.css';
+
 function App() {
   return (
     <Router>

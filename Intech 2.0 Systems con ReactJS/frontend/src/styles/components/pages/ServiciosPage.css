@@ -1,0 +1,53 @@
+.servicio{
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.servicio .info{
+    width: 75%;
+}
+
+.servicio .info h4{
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    margin:  0 0 1em;
+    padding-bottom: 0.5em;
+}
+
+.servicio .info p{
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+.servicio img{
+    width: 20%;
+}
+
+.servicios:nth-child(even){ /*par*/
+    float: right;
+    margin: 0 0 0 1em;
+}
+
+.servicios:nth-child(even) img{
+    float: right;
+    margin: 0 0 0 1em;
+}
+
+.servicio:nth-child(even) .info{
+    float: left;
+}
+
+.servicio:nth-child(odd) img{ /*impar*/
+    float: left;
+    margin: 0 1em 0 0;
+}
+
+.servicio:nth-child(odd) .info{
+    float: right;
+}

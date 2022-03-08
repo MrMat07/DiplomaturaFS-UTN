@@ -1,3 +1,5 @@
+import '../styles/components/pages/ContactoPage.css';
+
 const ContactosPage = (props) => {
   return (
     <main class="holder">

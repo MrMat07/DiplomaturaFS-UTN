@@ -1,0 +1,60 @@
+.historia {
+    width: 75%;
+    padding-right: 2em;
+}
+
+.historia p{
+    font-size: 0.8em;
+}
+
+.empleados{
+    overflow: hidden;
+}
+
+.empleado{
+    width: 18%;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
+    margin-bottom: 1em;   
+    float: left;
+    margin-left: 2.25%;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.empleado {
+    text-align: center;
+}
+
+.empleado img{
+    border-radius: 50%;
+    margin: 0.8em 0 1em;
+    max-width: 70%;
+}
+
+.empleado h5, .empleado h6{
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+}
+
+.empleado h5{
+    font-size: 0.9em;
+}
+
+.empleado h6{
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.empleado p{
+    font-size: 0.7em;
+    margin: 0 1em 1em;
+}
+
+.empleado:first-child{
+    margin-left: 0;
+}

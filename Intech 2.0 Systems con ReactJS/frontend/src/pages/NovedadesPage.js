@@ -1,3 +1,5 @@
+import '../styles/components/pages/ServiciosPage.css';
+
 const NovedadesPage = (props) => {
   return (
     <main class="holder">

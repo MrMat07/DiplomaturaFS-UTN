@@ -1,0 +1,46 @@
+.home_img{
+    margin-bottom: 1.5em;
+}
+
+.columnas{
+    overflow: hidden;
+}
+
+.bienvenidos, .comentarios{
+    box-sizing: border-box;
+}
+
+.bienvenidos{
+    width: 75%;
+    padding-right: 2em;
+}
+
+.comentarios{
+    width: 25%;
+}
+
+.comentario{
+    padding: 1em;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
+    margin-bottom: 1em;   
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.comentario .cita{
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.4em;
+    display: block;
+}
+
+
+.comentario .autor{
+    font-size: 0.7em;
+    text-align: center;
+    margin: 1em 0;
+    display: block;
+}

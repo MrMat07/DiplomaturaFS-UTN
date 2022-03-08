@@ -1,3 +1,5 @@
+import '../styles/components/pages/GaleriaPage.css';
+
 const GaleriaPage = () => {
   return (
     <main class="holder">
