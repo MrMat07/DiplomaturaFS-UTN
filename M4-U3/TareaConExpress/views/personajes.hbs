@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <body>
+      {{!-- <h1>{{title}}</h1> --}}
+      <img src="images/pokemon-logo.png" alt="PokeLogo" width="350px" />
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">{{title}}</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pokedex">Pokédex</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/personajes"
+                >Personajes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/historia">Historia</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="images/personajes/Ash.jpg" class="card-img-top" alt="Ash" width="100px"/>
+            <div class="card-body">
+              <h5 class="card-title">Ash Ketchum</h5>
+              <p class="card-text">Ash Ketchum (サトシ Satoshi en japonés) es el protagonista del anime de Pokémon. Ha aparecido en todos los episodios desde el primero, incluyendo todas las películas. Ha viajado por Kanto, Johto, Hoenn, Sinnoh, Teselia, Kalos, Alola y Galar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/personajes/Misty.jpg" class="card-img-top" alt="Misty" />
+            <div class="card-body">
+              <h5 class="card-title">Misty</h5>
+              <p class="card-text">Misty (カスミ Kasumi en japonés) de Ciudad Celeste, fue una de las protagonistas de la serie de anime Pokémon. Viajó por Kanto, el Archipiélago Naranja y Johto junto a Ash, Brock y Tracey durante la serie original.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/personajes/Brock.jpg" class="card-img-top" alt="Brock.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Brock</h5>
+              <p class="card-text">Brock (タケシ Takeshi en japonés) de Ciudad Plateada, fue uno de los protagonistas de la serie del anime Pokémon. Viajó por Kanto, Johto, Hoenn y Sinnoh junto a Ash Ketchum y otros personajes durante la mayoría del anime.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/personajes/Tracey.jpg" class="card-img-top" alt="Tracey" />
+            <div class="card-body">
+              <h5 class="card-title">Tracey</h5>
+              <p class="card-text">Tracey Sketchit (ケンジ Kenji en japonés), fue uno de los protagonistas en el anime. Viajó por el Archipiélago Naranja junto a Ash y Misty durante la segunda temporada.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </body>
+</html>

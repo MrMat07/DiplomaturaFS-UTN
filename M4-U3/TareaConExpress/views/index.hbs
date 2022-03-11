@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  </head>
+  <body>
+    {{!-- <h1>{{title}}</h1> --}}
+    <img src="images/pokemon-logo.png" alt="PokeLogo" width="350px" />
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">{{title}}</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pokedex">Pokédex</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/personajes">Personajes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/historia">Historia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img
+            src="images/generaicon-1.jpg"
+            class="d-block w-100"
+            alt="generaicon-1"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Generación 1:</h5>
+            <p>Pokémon Red/Green/Blue (1995) | La generación inicial fue la que
+              introdujo la segunda mayor cantidad de pokémon, siendo un total de
+              151, incluyendo al misterioso Mew.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="images/generaicon-2.jpg"
+            class="d-block w-100"
+            alt="generaicon-2"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Generación 2:</h5>
+            <p>Pokémon Gold/Silver (1999) | La segunda generación fue la primera
+              en expandir la cantidad de criaturas, las cuales incluían
+              versiones “bebé” de algunas especies de la primera generación e
+              incluían evoluciones de pokémon previamente inexistentes. En total
+              introdujo 100 especies.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/generaicon-3.jpg"
+            class="d-block w-100"
+            alt="generaicon-3"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Generación 3:</h5>
+            <p>Pokémon Ruby/Saphire (2002) | La tercera generación se escindió
+              de la continuidad de la historia y tomó lugar en la isla de Hoenn,
+              un lugar inconexo con Johto y Kanto, los cuales podías visitar en
+              Pokémon Gold. En total introdujo 135 especies</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
