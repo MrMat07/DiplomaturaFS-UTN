@@ -1,0 +1,30 @@
+<h1>{{title}}</h1>
+{{#if conocido}}
+  <div class="banner">
+      <h4>Usuario: {{nickname}}</h4>
+      <p>Mail: {{mail}}</p>
+  </div>
+  <div class="columna">
+    <form action="/salir">
+      <h2>Welcome to {{apellido}}, {{nombre}}</h2>
+      <button class="salir">Logout</button>
+    </form>
+  </div>
+{{/if}}
+
+{{#unless conocido}}
+  <div class="banner">
+       <h2>Sesión Finalizada</h2>
+  </div>
+  <div class="columna">
+    <h4>Por favor registrese:</h4>
+    <form action="/ingresar" method="post">
+      <input type="text" name="nombre" placeholder="Nombre" />
+      <input type="text" name="apellido" placeholder="Apellido" />
+      <input type="text" name="mail" placeholder="E-Mail" />
+      <input type="text" name="nickname" placeholder="Nombre de Usuario" />
+      <input type="password" name="password" placeholder="Contraseña" />
+      <button class="ingresar">Login</button>
+    </form>
+  </div>
+{{/unless}}
