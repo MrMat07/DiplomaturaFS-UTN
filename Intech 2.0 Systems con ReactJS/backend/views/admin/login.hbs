@@ -1,3 +1,19 @@
-<div class="mantenimiento">
-  <img src="/images/Sitio-en_Construccion.png" alt="Sitio en Construccion" />
+<div class="contenedor">
+  <div class="row">
+    <form action="/admin/login" method="post">
+      <div class="mb-3">
+        <input class="form-control" id="inputNombreUsuario" type="text" name="NombreUsuario" placeholder="Nombre de Usuario" />
+      </div>
+      <div class="mb-3">
+        <input class="form-control" id="inputClave" type="password" placeholder="Contraseña" name="Clave" />
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="acciones">Ingresar</button>
+      </div>
+
+      {{#if error}}
+      <p class="error">Usuario o Contraseña Incorrectos</p>
+      {{/if}}
+    </form>
+  </div>
 </div>

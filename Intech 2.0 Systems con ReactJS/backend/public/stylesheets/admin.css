@@ -1,0 +1,63 @@
+header h1 {
+  position: static;
+}
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.row{
+  width: 15%;
+  padding: 0.6em;
+}
+
+form button{
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  color: white;
+  background-color: #168c8c ;
+  border: 1px solid  #e3f7f7;
+  border-radius: 10px;
+  width: auto;
+  cursor: pointer;
+}
+
+form button:hover{
+  background-color:  #e3f7f7;
+  border: 1px solid  #84dddd;
+  color: black;
+}
+
+form.acciones{
+  text-align: center;
+}
+
+.error{
+  padding: 0.6em;
+  color: red;
+  font-style: italic;
+}
+
+.recuadro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.imagen-perfil{
+  width: 150px;
+  height: 150px;
+  border: #84dddd solid 0.5em;
+}
