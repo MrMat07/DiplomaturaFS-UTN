@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 09-04-2022 a las 02:44:27
+-- Tiempo de generación: 28-04-2022 a las 02:29:17
 -- Versión del servidor: 5.7.36
 -- Versión de PHP: 7.4.26
 
@@ -20,6 +20,29 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `intech2systems`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `news`
+--
+
+DROP TABLE IF EXISTS `news`;
+CREATE TABLE IF NOT EXISTS `news` (
+  `IdNews` int(11) NOT NULL AUTO_INCREMENT,
+  `Titulo` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
+  `Subtitulo` text COLLATE utf8_unicode_ci NOT NULL,
+  `Cuerpo` text COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`IdNews`)
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `news`
+--
+
+INSERT INTO `news` (`IdNews`, `Titulo`, `Subtitulo`, `Cuerpo`) VALUES
+(2, 'Comprueba tu navegador: puedes estar en peligro por este fallo', 'Seguridad2', 'De entre los muchos navegadores de internet por los que nos podemos decantar para usar a diario, la mayoría prefiere Google Chrome. Con una penetración de mercado muy superior al resto de competidores, este es uno de los programas más utilizados en los ordenadores y dispositivos móviles de todo el mundo, pero no está carente de problemas.'),
+(3, 'Controla mejor un PC antiguo remotamente en AnyDesk con estos cambios', 'Programas', 'En gran medida gracias al extendido uso de internet, todo aquello relacionado con los trabajos de forma remota cada vez se usa más. Para ello utilizamos aplicaciones específicas y especialmente desarrolladas para estas tareas como es el caso de AnyDesk.');
 
 -- --------------------------------------------------------
 
