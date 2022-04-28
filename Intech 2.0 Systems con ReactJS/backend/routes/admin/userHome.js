@@ -9,6 +9,7 @@ router.get("/", function (req, res, next) {
     nombre: req.session.nombre,
     apellido: req.session.apellido,
     mail: req.session.mail,
+    nav:true
   });
 });
 

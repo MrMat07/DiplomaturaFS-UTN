@@ -1,0 +1,43 @@
+<div class="contenedor">
+  <div class="row">
+    <h3>Agregar una Nueva Novedad</h3>
+    <h5>Los campos (*) son obligatorios</h5>
+    <form action="/admin/novedades/add" method="post">
+      <div class="mb-3">
+        <input
+          class="form-control"
+          id="inputTitulo"
+          type="text"
+          name="titulo"
+          placeholder="Titulo*"
+        />
+      </div>
+      <div class="mb-3">
+        <textarea
+          class="form-control"
+          name="subtitulo"
+          id="textareaSubtitulo"
+          {{!-- cols="30"
+          rows="10" --}}
+          placeholder="Subtitulo*"
+        ></textarea>
+      </div>
+    <div class="mb-3">
+        <textarea
+          class="form-control"
+          name="cuerpo"
+          id="textareaCuerpo"
+          {{!-- cols="30"
+          rows="10" --}}
+          placeholder="Cuerpo*"
+        ></textarea>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="acciones">Agregar</button>
+      </div>
+    </form>
+    {{#if error}}
+       <p class="error">{{message}}</p>
+    {{/if}}
+  </div>
+</div>

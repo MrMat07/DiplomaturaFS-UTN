@@ -4,13 +4,13 @@ const usuariosModels = require('./../../models/usuariosModels');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('admin/login', { layout: 'admin/layout' });
+  res.render('admin/login', { layout: 'admin/layout',nav:false});
 });
 
 // Logaout
 router.get('/logout', function(req, res, next) {
   req.session.destroy();
-  res.render('admin/login', { layout: 'admin/layout' });
+  res.render('admin/login', { layout: 'admin/layout',nav:false });
 });
 
 router.post('/',async (req,res,next)=>{
@@ -30,7 +30,8 @@ router.post('/',async (req,res,next)=>{
     }else{
       res.render('admin/login',{
         layout:'admin/layout',
-        error:true
+        error:true,
+        nav:false
       });
     }
   }catch(error){

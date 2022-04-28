@@ -1,20 +1,49 @@
-<div class="contenedor-nav">
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-            <img src="/images/logo/logo.svg" alt="logo" width="50" height="34" class="d-inline-block align-text-top" />
-            <a class="navbar-brand" href="/admin/userHome">
-                Home
-            </a>
-            <a class="navbar-brand" href="/admin/novedades">
-                Novedades
-            </a>
-            <a class="navbar-brand" href="/admin/usuarios">
-                Usuarios
-            </a>
-        </div>
-    </nav>
+<div class="contenedor">
+  <div class="table-row">
+    <div class="col-7">
+      <h3>Listado de Novedades</h3>
+    </div>
+    <div class="col-5 text-end">
+      <a class="btn btn-success" href="/admin/novedades/add"><i
+          class="fa fa-plus"
+          aria-hidden="true"
+        ></i>Nuevo</a>
+    </div>
+  </div>
 </div>
 
-<div class="mantenimiento">
-    <img src="/images/Sitio-en_Construccion.png" alt="">
+<div class="contenedor">
+  <div class="table-row">
+    <div class="col">
+      <table class="table">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Titulo</th>
+            <th scope="col" class="text-end">Accion</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each novedades}}
+          <tr>
+            <th scope="row">{{IdNews}}</th>
+            <td>{{Titulo}}</td>
+            <td class="text-end">
+              <a href="/admin/novedades/update/{{IdNews}}" class="btn btn-sm btn-secundary"><i
+                  class="fa fa-pencil"
+                ></i></a>
+              <a href="/admin/novedades/delete/{{IdNews}}" class="btn btn-sm btn-secundary"><i
+                  class="fa fa-trash"
+                ></i></a>
+            </td>
+          </tr>
+        {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
+{{! En construccion }}
+{{! <div class="mantenimiento">
+    <img src="/images/Sitio-en_Construccion.png" alt="">
+</div> }}

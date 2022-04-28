@@ -4,7 +4,7 @@ const usuariosModels = require('./../../models/usuariosModels');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('admin/usuarios', { layout: 'admin/layout' });
+  res.render('admin/usuarios', { layout: 'admin/layout',nav:true });
 });
 
 module.exports = router;

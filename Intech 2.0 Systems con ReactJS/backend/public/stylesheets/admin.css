@@ -1,5 +1,6 @@
 header h1 {
   position: static;
+  margin-bottom: 50px;
 }
 
 .contenedor{
@@ -12,13 +13,32 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .row{
   width: 15%;
   padding: 0.6em;
+  width: 50%;
 }
+
+.table-row{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3{
+  font-size: 1.5em;
+}
+
+/* table {
+  width: 100%;
+}
+th, td {
+  width: 25%;
+} */
 
 form button{
   text-decoration: none;
