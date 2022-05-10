@@ -1,0 +1,55 @@
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  background-image: url(/images/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header{
+   /* background-image: linear-gradient(180deg, white 0, #bac3ff 50%, #6a8bff 100%);  */
+  /* background-color:   #7D9AFF; */
+  background-color: transparent;
+  padding: -1em 0 ; 
+}
+
+header div{
+  padding: 10px;
+}
+
+header div img{
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
+}
+
+header h1{
+  /* color:  #5e24c3; */
+  color: black;
+  padding-left: 20px;
+  font-size: -2.5em;
+  display: inline-block;
+  position: relative;
+  bottom: 45px;
+  /* text-shadow: 2px 2px 5px black; */
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
+}
+
+.holder{
+  text-align: center;
+}
+
+.mantenimiento{
+  text-align: center;
+}
+
+footer{
+  background-color: #ccc;
+  clear: both;
+  color: #333;
+  padding: 3em 0;
+  margin-top: 2em;
+  text-align: center;
+  box-shadow: inset 0 0 10px 1.5px gray;
+}
