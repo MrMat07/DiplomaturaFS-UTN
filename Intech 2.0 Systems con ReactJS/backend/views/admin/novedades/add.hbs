@@ -2,7 +2,7 @@
   <div class="row">
     <h3>Agregar una Nueva Novedad</h3>
     <h5>Los campos (*) son obligatorios</h5>
-    <form action="/admin/novedades/add" method="post">
+    <form action="/admin/novedades/add" method="post" enctype="multipart/form-data">
       <div class="mb-3">
         <input
           class="form-control"
@@ -31,6 +31,14 @@
           rows="10" --}}
           placeholder="Cuerpo*"
         ></textarea>
+      </div>
+      <div class="mb-3">
+       <label> Imagen: <input
+          class="form-control"
+          id="imagen"
+          type="file"
+          name="imagen"
+        /></label>
       </div>
       <div class="col-auto">
         <button type="submit" class="acciones">Agregar</button>
