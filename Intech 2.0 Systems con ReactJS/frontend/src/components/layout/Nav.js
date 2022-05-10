@@ -5,7 +5,7 @@ import '../../styles/components/layout/Nav.css';
 const Nav = (props) => {
   return (
     <nav>
-      <div class="holder">
+      <div className="holder">
         <ul>
           <li>
             <NavLink activeClassName="activo" exact to="/">Home</NavLink>
@@ -21,6 +21,12 @@ const Nav = (props) => {
           </li>
           <li>
             <NavLink activeClassName="activo" exact to="/novedades">Novedades</NavLink>
+          </li>
+          <li>
+            <NavLink activeClassName="activo" exact to="/noticias">Noticias</NavLink>
+          </li>
+          <li>
+            <NavLink activeClassName="activo" exact to="/promociones">Promociones</NavLink>
           </li>
           <li>
             <NavLink activeClassName="activo" exact to="/contactos">Contactos</NavLink>

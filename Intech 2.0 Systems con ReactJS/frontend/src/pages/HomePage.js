@@ -2,13 +2,13 @@ import '../styles/components/pages/HomePage.css';
 
 const HomePage = (props) => {
   return (
-    <main class="holder">
-      <div class="home_img">
+    <main className="holder">
+      <div className="home_img">
         <img src="images/desarrollo_home.jpeg" width="960" alt="Desarrollo" />
       </div>
 
-      <div class="columnas">
-        <div class="bienvenidos left">
+      <div className="columnas">
+        <div className="bienvenidos left">
           <h2>Bienvenidos</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed eaque
@@ -23,15 +23,15 @@ const HomePage = (props) => {
             similique, sint molestias eaque.
           </p>
         </div>
-        <div class="comentarios right">
+        <div className="comentarios right">
           <h2>Comentarios:</h2>
-          <div class="comentario">
-            <span class="cita">Exelente Servicio</span>
-            <span class="autor">Juan Jose Gonzales</span>
+          <div className="comentario">
+            <span className="cita">Exelente Servicio</span>
+            <span className="autor">Juan Jose Gonzales</span>
           </div>
-          <div class="comentario">
-            <span class="cita">Servicio Regular</span>
-            <span class="autor">Marcos Medina</span>
+          <div className="comentario">
+            <span className="cita">Servicio Regular</span>
+            <span className="autor">Marcos Medina</span>
           </div>
         </div>
       </div>

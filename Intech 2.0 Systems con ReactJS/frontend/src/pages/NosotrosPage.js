@@ -2,8 +2,8 @@ import '../styles/components/pages/NosotrosPage.css'
 
 const NosotrosPage = (props) => {
   return (
-    <main class="holder">
-      <div class="historia">
+    <main className="holder">
+      <div className="historia">
         <h2>Historia:</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
@@ -19,10 +19,10 @@ const NosotrosPage = (props) => {
         </p>
       </div>
 
-      <div class="staff">
+      <div className="staff">
         <h2>Staff:</h2>
-        <div class="empleados">
-          <div class="empleado">
+        <div className="empleados">
+          <div className="empleado">
             <img
               src="images/nosotros/staff/nosotros1.jpg"
               alt="Juan Jose Lopez"
@@ -36,7 +36,7 @@ const NosotrosPage = (props) => {
               provident iusto. Reiciendis, at.
             </p>
           </div>
-          <div class="empleado">
+          <div className="empleado">
             <img
               src="images/nosotros/staff/nosotros2.jpg"
               alt="Ana Laura Martinez"
@@ -50,7 +50,7 @@ const NosotrosPage = (props) => {
               provident iusto. Reiciendis, at.
             </p>
           </div>
-          <div class="empleado">
+          <div className="empleado">
             <img
               src="images/nosotros/staff/nosotros3.jpg"
               alt="Jose Luis Rodriguez"
@@ -64,7 +64,7 @@ const NosotrosPage = (props) => {
               provident iusto. Reiciendis, at.
             </p>
           </div>
-          <div class="empleado">
+          <div className="empleado">
             <img
               src="images/nosotros/staff/nosotros4.jpg"
               alt="Maria Jose Hernandez"
@@ -78,7 +78,7 @@ const NosotrosPage = (props) => {
               provident iusto. Reiciendis, at.
             </p>
           </div>
-          <div class="empleado">
+          <div className="empleado">
             <img
               src="images/nosotros/staff/nosotros5.jpg"
               alt="Hernesto Gonzalves"
