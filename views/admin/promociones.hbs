@@ -1,0 +1,51 @@
+<div class="contenedor">
+  <div class="table-row">
+    <div class="col-7">
+      <h3>Listado de Promociones</h3>
+    </div>
+    <div class="col-5 text-end">
+      <a class="btn btn-success" href="/admin/promociones/add"><i
+          class="fa fa-plus"
+          aria-hidden="true"
+        ></i>Nuevo</a>
+    </div>
+  </div>
+</div>
+
+<div class="contenedor">
+  <div class="table-row">
+    <div class="col">
+      <table class="table">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Titulo</th>
+            <th scope="col">Precio</th>
+            <th scope="col" class="text-end">Accion</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each promociones}}
+          <tr>
+            <th scope="row">{{IdPromotion}}</th>
+            <td>{{Titulo}}</td>
+            <td>{{Precio}}</td>
+            <td class="text-end">
+              <a href="/admin/promociones/update/{{IdPromotion}}" class="btn btn-sm btn-secundary"><i
+                  class="fa fa-pencil"
+                ></i></a>
+              <a href="/admin/promociones/delete/{{IdPromotion}}" class="btn btn-sm btn-secundary"><i
+                  class="fa fa-trash"
+                ></i></a>
+            </td>
+          </tr>
+        {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{{! En construccion }}
+{{! <div class="mantenimiento">
+    <img src="/images/Sitio-en_Construccion.png" alt="">
+</div> }}

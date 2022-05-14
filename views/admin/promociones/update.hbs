@@ -1,0 +1,48 @@
+<div class="contenedor">
+  <div class="row">
+    <h3>Modificar Promocion</h3>
+    <form action="/admin/promociones/update" method="post" enctype="multipart/form-data">
+        <input
+          class="form-control"
+          id="idpromotion"
+          type="hidden"
+          name="id"
+          value="{{promocion.IdPromotion}}"
+        />
+      <div class="mb-3">
+        <input
+          class="form-control"
+          id="inputTitulo"
+          type="text"
+          name="titulo"
+          placeholder="Titulo"
+          value="{{promocion.Titulo}}"
+        />
+      </div>
+      <div class="mb-3">
+        <input
+          class="form-control"
+          id="inputPrecio"
+          type="text"
+          name="precio"
+          placeholder="Precio"
+          value="{{promocion.Precio}}"
+        />
+      </div>
+    <div class="mb-3">
+        <textarea
+          class="form-control"
+          name="detalle"
+          id="textareaDetalle"
+          placeholder="Detalle"
+        >{{promocion.Detalle}}</textarea>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="acciones">Modificar</button>
+      </div>
+    </form>
+    {{#if error}}
+       <p class="error">{{message}}</p>
+    {{/if}}
+  </div>
+</div>

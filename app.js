@@ -19,7 +19,7 @@ var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/userHome');
 var novedadesRouter = require('./routes/admin/novedades');
-var usuariosRouter = require('./routes/admin/usuarios');
+var promocionesRouter = require('./routes/admin/promociones');
 var apiRouter=require('./routes/api');
 const { redirect } = require('express/lib/response');
 // ------------------------------------------------------------------
@@ -63,12 +63,12 @@ app.use(fileUpload({
   tempFileDir:'/temp/'
 }));
 
-app.use('/', indexRouter);
+app.use('/', loginRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/userHome',secured, adminRouter);
 app.use('/admin/novedades',secured, novedadesRouter);
-app.use('/admin/usuarios',secured, usuariosRouter);
+app.use('/admin/promociones',secured, promocionesRouter);
 app.use('/api',cors(),apiRouter);
 
 // catch 404 and forward to error handler

@@ -52,4 +52,8 @@ footer{
   margin-top: 2em;
   text-align: center;
   box-shadow: inset 0 0 10px 1.5px gray;
+  opacity: 90%;
+  /* position: absolute;
+  bottom: 0;
+  width: 100%; */
 }

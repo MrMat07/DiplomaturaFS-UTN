@@ -1,6 +1,7 @@
 const mysqlConnection = require('./db'); //llamado a la BD
 const md5 = require('md5');
 
+// Consulta el usuario para el login
 async function getUser(user,password){
     try{
         var query = 'SELECT * FROM `users` WHERE NombreUsuario = ? AND Clave = ? LIMIT 1';
@@ -10,6 +11,7 @@ async function getUser(user,password){
         console.log(error);
     }
 }
+
 
 
 module.exports = {getUser};

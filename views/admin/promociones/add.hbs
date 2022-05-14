@@ -1,0 +1,40 @@
+<div class="contenedor">
+  <div class="row">
+    <h3>Agregar una Nueva Promocion</h3>
+    <h5>Los campos (*) son obligatorios</h5>
+    <form action="/admin/promociones/add" method="post" enctype="multipart/form-data">
+      <div class="mb-3">
+        <input
+          class="form-control"
+          id="inputTitulo"
+          type="text"
+          name="titulo"
+          placeholder="Titulo*"
+        />
+      </div>
+      <div class="mb-3">
+        <input
+          class="form-control"
+          name="precio"
+          type="text"
+          id="inputPrecio"
+          placeholder="Precio*"
+        />
+      </div>
+    <div class="mb-3">
+        <textarea
+          class="form-control"
+          name="detalle"
+          id="textareaDetalle"
+          placeholder="Detalle*"
+        ></textarea>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="acciones">Agregar</button>
+      </div>
+    </form>
+    {{#if error}}
+       <p class="error">{{message}}</p>
+    {{/if}}
+  </div>
+</div>
