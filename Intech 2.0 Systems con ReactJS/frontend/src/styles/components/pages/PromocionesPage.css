@@ -1,0 +1,43 @@
+.promociones{
+    overflow: hidden;
+}
+
+.promocion{
+    width: 20%;
+    padding: 1em;
+    background-color: whitesmoke;
+    color: black;
+    margin-bottom: 1em;   
+    float: left;
+    margin-left: 2.25%;
+    box-sizing: border-box;
+    border: 0.1em solid black;
+    height: 25em;
+}
+
+.promocion {
+    text-align: center;
+}
+
+.promocion h2, .promocion h5{
+    font-weight: normal;
+}
+
+.promocion h2{
+    font-size: 1em;
+}
+
+.promocion h5{
+    font-size: 0.8em;
+    font-style: italic;
+    margin-top: -2em;
+}
+
+.promocion p{
+    font-size: 0.7em;
+    margin: 0 1em 1em;
+}
+
+/* .promocion:first-child{
+    margin-left: 0;
+} */

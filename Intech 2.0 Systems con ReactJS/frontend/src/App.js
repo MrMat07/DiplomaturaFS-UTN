@@ -12,9 +12,12 @@ import ServiciosPage from "./pages/ServiciosPage";
 import GaleriaPage from "./pages/GaleriaPage";
 import NovedadesPage from "./pages/NovedadesPage";
 import ContactosPage from "./pages/ContactoPage";
+import PromocionesPage from "./pages/PromocionesPage";
+import NoticiasPage from "./pages/NoticiasPage";
 
 // Iporto los estilos
 import './App.css';
+document.title='Intech 2.0 Systems';
 
 function App() {
   return (
@@ -29,6 +32,8 @@ function App() {
           <Route path={"/galeria"} exact component={GaleriaPage} />
           <Route path={"/novedades"} exact component={NovedadesPage} />
           <Route path={"/contactos"} exact component={ContactosPage} />
+          <Route path={"/promociones"} exact component={PromocionesPage} />
+          <Route path={"/noticias"} exact component={NoticiasPage} />
         </Switch>
         <Footer />
       </div>
