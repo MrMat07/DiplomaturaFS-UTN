@@ -60,7 +60,7 @@ secured = async (req,res,next)=>{
 // activo el uso de temporales y le indico donde se guardan
 app.use(fileUpload({
   useTempFiles:true,
-  tempFileDir:'/temp/'
+  tempFileDir:'/temp'
 }));
 
 app.use('/', loginRouter);
