@@ -28,7 +28,7 @@ const ContactosPage = (props) => {
     e.preventDefault();
     setMsg('');
     setSendig(true)
-    const response = await axios.post('http://localhost:3000/api/contactos', formData);
+    const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/contactos`, formData);
     setSendig(false);
     setMsg(response.data.message);
     if(response.data.error===false){
