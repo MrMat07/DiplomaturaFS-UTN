@@ -10,7 +10,7 @@ const NoticiasPage = (props) => {
     useEffect(()=>{
       const cargarNoticias = async()=>{
         setLoading(true);
-        const response = await fetch(`${process.env.REACT_NOTICE_API_URL}`);
+        const response = await fetch('http://api.mediastack.com/v1/news?access_key=67a6cb8063a8f6236df16ef7e942cd91&categories=technology &languages=es, en');
         const noticiasJson = await response.json()
         //console.log(noticiasJson.data);
         setNoticias(noticiasJson.data);
