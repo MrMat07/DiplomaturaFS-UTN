@@ -1,6 +1,7 @@
 var express = require("express");
 var router = express.Router();
 const novedadesModels = require("./../models/novedadesModels");
+const promocionesModels = require("./../models/promocionesModels");
 const cloudinary = require("cloudinary").v2;
 const nodemailer = require("nodemailer");
 const async = require("hbs/lib/async");
@@ -12,8 +13,8 @@ router.get("/novedades", async function (req, res, next) {
   novedades = novedades.map((novedades) => {
     if (novedades.img) {
       const imagen = cloudinary.url(novedades.img, {
-        width: 960,
-        height: 200,
+        width: 1000,
+        height: 800,
         crop: "fill",
       });
       return {
@@ -60,5 +61,19 @@ console.log(`${req.body.nombre}`);
 
 });
 // -------------------------------------------------------- ENVIO DE MAIL -------------------------------------------------------- //
+
+// -------------------------------------------------------- PROMOCIONES -------------------------------------------------------- //
+router.get("/promociones", async function (req, res, next) {
+  var promociones = await promocionesModels.getPromociones();
+
+  promociones = promociones.map((promociones) => {
+      return {
+        ...promociones
+      };
+  });
+
+  res.json(promociones);
+});
+// -------------------------------------------------------- PROMOCIONES -------------------------------------------------------- //
 
 module.exports = router;

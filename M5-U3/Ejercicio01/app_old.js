@@ -7,7 +7,7 @@ var logger = require('morgan');
 // Traigo la configuracion del archivo .env
 require('dotenv').config();
 // Creo la conexion con la bese de datos
-const mysqlConnection = require('./models/db');
+const mysqlConnection=require('./models/db');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -28,10 +28,10 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 // Select a la vista vEmpleados
-// mysqlConnection.query("SELECT * FROM `empleados`").then(function(resultados)
-// {
-//   console.log(resultados);
-// });
+mysqlConnection.query("SELECT * FROM `vempleados`").then(function(resultados)
+{
+  console.log(resultados);
+});
 
 // Insert a la tabla Empleados
 // const obj = {
@@ -50,19 +50,17 @@ app.use('/users', usersRouter);
 
 // Update a la tabla Empleados
 // var idEmpleado = 21;
-const obj = {
-  trabajo: '6'
-}
+// const obj = { 
+//   trabajo:'6'
+// }
 
-mysqlConnection.query("SELECT MAX(`id_emp`) as id FROM `empleados`").then(function (resultados) {
-  idEmpleado = resultados[0].id;
-  console.log(idEmpleado);
-  mysqlConnection.query("UPDATE  `empleados` SET ? WHERE `id_emp` = ?", [obj, idEmpleado]).then(function (resultados) {
-    console.log(resultados);
-  });
-});
+// // mysqlConnection.query("SELECT MAX(`IdEmpleado`) FROM `empleados`").then(function(resultados)
+// // {
+// //   idEmpleado == resultados;
+// //   console.log(idEmpleado);
+// // });
 
-// mysqlConnection.query("UPDATE  `empleados` SET ? WHERE `id_emp` = ?",[obj , idEmpleado]).then(function(resultados)
+// mysqlConnection.query("UPDATE  `empleados` SET ? WHERE `IdEmpleado` = ?",[obj , idEmpleado]).then(function(resultados)
 // {
 //    console.log(resultados);
 // });
@@ -76,12 +74,12 @@ mysqlConnection.query("SELECT MAX(`id_emp`) as id FROM `empleados`").then(functi
 // });
 
 // catch 404 and forward to error handler
-app.use(function (req, res, next) {
+app.use(function(req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function (err, req, res, next) {
+app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
