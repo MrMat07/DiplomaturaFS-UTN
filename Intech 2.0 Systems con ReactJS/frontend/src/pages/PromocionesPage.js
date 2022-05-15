@@ -11,7 +11,7 @@ const PromocionesPage =(props)=>{
   useEffect(()=>{
     const cargarPromociones = async()=>{
       setLoading(true);
-      const response = await axios.get('http://localhost:3000/api/promociones');
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/promociones`);
       setPromociones(response.data);
       setLoading(false);
     };
