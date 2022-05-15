@@ -2,7 +2,7 @@ const mysql=require('mysql');
 const util=require('util');
 
 const mysqlConnection=mysql.createConnection({
-    connectionLimit:10,
+   // connectionLimit:10,
     host:process.env.MYSQL_HOST,
     database:process.env.MYSQL_DB_NAME,
     user:process.env.MYSQL_USER,
